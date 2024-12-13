@@ -1,1 +1,3 @@
-from mat3ra.esse.models.material import *
+from mat3ra.esse.models.material import MaterialSchema
+
+MaterialSchema = MaterialSchema

@@ -16,6 +16,7 @@ def is_valid_with_pydantic(example: dict, pydantic_model: BaseModel):
         pydantic_model(**example)
         return True
     except ValidationError as e:
+        print(e)
         return False
 
 
