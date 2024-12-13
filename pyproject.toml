@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE.md"}
 authors = [
-    {name = "Exabyte Inc.", email = "info@mat3ra.com"}
+    {name = "CAMSAI", email = "info@camsai.org"}
 ]
 classifiers = [
     "Programming Language :: Python",
@@ -15,8 +15,12 @@ classifiers = [
     "Topic :: Software Development",
 ]
 dependencies = [
-    # add requirements here
-    "numpy"
+    # general requirements
+    "numpy",
+    # "pydantic", # included in mat3ra-esse[dev]
+    # "jsonschema",
+    # specific requirements
+    "mat3ra-esse[dev]",
 ]
 
 [project.optional-dependencies]
