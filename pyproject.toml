@@ -17,8 +17,10 @@ classifiers = [
 dependencies = [
     # general requirements
     "numpy",
+    # "pydantic", # included in mat3ra-esse[dev]
+    # "jsonschema",
     # specific requirements
-    "mat3ra-esse",
+    "mat3ra-esse[dev]",
 ]
 
 [project.optional-dependencies]
