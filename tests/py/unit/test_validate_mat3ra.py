@@ -8,5 +8,3 @@ def test_validate_mat3ra_material():
     # TODO: figure out why derivedProperties is not in the schema
     example_material["derivedProperties"] = []
     assert is_valid(example_material, Mat3raMaterialSchema)
-
-
