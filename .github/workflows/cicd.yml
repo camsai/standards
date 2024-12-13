@@ -87,4 +87,3 @@ jobs:
             python-version: 3.10.12
             github-token: ${{ secrets.GITHUB_TOKEN }}
             pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
-            publish-tag: 'false'
