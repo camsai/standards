@@ -20,7 +20,7 @@ dependencies = [
     # "pydantic", # included in mat3ra-esse[dev]
     # "jsonschema",
     # specific requirements
-    "mat3ra-esse[dev]",
+    "mat3ra-esse[dev]>=2026.10.25.post1",
 ]
 
 [project.optional-dependencies]
