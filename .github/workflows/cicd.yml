@@ -9,7 +9,7 @@ concurrency:
 
 jobs:
   run-py-linter:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         python-version:
@@ -35,7 +35,7 @@ jobs:
 
   run-py-tests:
     needs: run-py-linter
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         python-version:
@@ -65,7 +65,7 @@ jobs:
     needs:
       - run-py-tests
       - run-py-linter
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: (github.ref_name == 'main')
 
     steps:
@@ -84,6 +84,6 @@ jobs:
       -   name: Publish python release
           uses: ./actions/py/publish
           with:
-            python-version: 3.10.12
+            python-version: 3.10.x
             github-token: ${{ secrets.GITHUB_TOKEN }}
             pypi-api-token: ${{ secrets.PYPI_API_TOKEN }}
